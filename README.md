@@ -11,7 +11,7 @@ Elm Template
 
 ## Install
 ```bash
-cp -r elm-template my-project
+git clone https://github.com/HadrienMP/elm-template.git my-project
 cd my-project
 rm -rf .git
 
