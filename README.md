@@ -3,8 +3,7 @@ Elm Template
 ## Features:
 - Elm Css
 - Parcel for building/dev/prod
-- Elm-tooling for non nix ussers
-- Direnv and flake.nix for nix users
+- Elm-tooling
 - Elm Format
 - Elm Review (with my personal favorite rules for now)
 - Elm Test RS which is much faster than Elm Test
@@ -16,11 +15,7 @@ git clone https://github.com/HadrienMP/elm-template.git $project
 cd $project
 rm -rf .git
 
-# Non nix users
 npm install
-
-# Nix users
-direnv allow
 ```
 
 ## Run
