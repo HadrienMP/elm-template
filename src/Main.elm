@@ -2,7 +2,6 @@ module Main exposing (Model, Msg, main)
 
 import Browser
 import Html.Styled as Html exposing (Html)
-import Html.Styled.Events as Evts
 
 
 main : Program () Model Msg
@@ -34,15 +33,13 @@ init _ =
 -- Update
 
 
-type Msg
-    = Noop
+type alias Msg =
+    ()
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        Noop ->
-            ( model, Cmd.none )
+update _ model =
+    ( model, Cmd.none )
 
 
 
@@ -53,5 +50,5 @@ view : Model -> Html Msg
 view _ =
     Html.div
         []
-        [ Html.h1 [ Evts.onClick Noop ] [ Html.text "Hello World !" ]
+        [ Html.h1 [] [ Html.text "Hello World !" ]
         ]
